@@ -1,0 +1,57 @@
+{
+    "expert_name": "The Vibe Architect (El Arquitecto)",
+    "headline": "Como o VibeCoding Framework (Arquitectura de Prompting de Nivel 4) resolve o medo de Make Money Online / SaaS",
+    "subheadline": "Sem problemas comuns. Sem dietas impossíveis. Só resultados.",
+    "mechanism": "VibeCoding Framework (Arquitectura de Prompting de Nivel 4)",
+    "guarantee": "Garantía de Resultados de 30 Días: Si no logras publicar tu primera app, te devuelvo cada centavo y te regalo una consultoría 1 a 1.",
+    "price": "Preco a consultar",
+    "offer_name": "Metodo The Vibe Architect (El Arquitecto) - Transformacao 360",
+    "the_stack": [
+        {
+            "item": "Metodo The Vibe Architect (El Arquitecto)",
+            "value": "R$ 497",
+            "description": "Core product."
+        },
+        {
+            "item": "Bônus: Mestre da Saciedade",
+            "value": "R$ 197",
+            "description": "Alimentos que zeram a fome."
+        },
+        {
+            "item": "Comunidade VIP",
+            "value": "R$ 297",
+            "description": "Suporte direto."
+        }
+    ],
+    "upsell": {
+        "expert_name": "The Vibe Architect (El Arquitecto)",
+        "headline": "ESPERA! Nao feche essa pagina ainda...",
+        "subheadline": "Sem problemas comuns. Sem dietas impossíveis. Só resultados.",
+        "mechanism": "VibeCoding Framework (Arquitectura de Prompting de Nivel 4)",
+        "guarantee": "Garantía de Resultados de 30 Días: Si no logras publicar tu primera app, te devuelvo cada centavo y te regalo una consultoría 1 a 1.",
+        "price": "R$ 197",
+        "offer_name": "Metodo The Vibe Architect (El Arquitecto) - Transformacao 360",
+        "the_stack": [
+            {
+                "item": "Metodo The Vibe Architect (El Arquitecto)",
+                "value": "R$ 497",
+                "description": "Core product."
+            },
+            {
+                "item": "Bônus: Mestre da Saciedade",
+                "value": "R$ 197",
+                "description": "Alimentos que zeram a fome."
+            },
+            {
+                "item": "Comunidade VIP",
+                "value": "R$ 297",
+                "description": "Suporte direto."
+            }
+        ],
+        "upsell": {},
+        "downsell": {},
+        "page_type": "upsell"
+    },
+    "downsell": {},
+    "page_type": "sales"
+}
