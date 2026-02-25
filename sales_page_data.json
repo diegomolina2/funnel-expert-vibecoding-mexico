@@ -1,51 +1,51 @@
 {
     "expert_name": "The Vibe Architect (El Arquitecto)",
     "headline": "Como o VibeCoding Framework (Arquitectura de Prompting de Nivel 4) resolve o medo de Make Money Online / SaaS",
-    "subheadline": "Sem problemas comuns. Sem dietas impossíveis. Só resultados.",
+    "subheadline": "Sem Perder el 10% de las ganancias en comisiones bancarias y tipos de cambio (El dolor de la moneda local).. Sem dietas impossíveis. Só resultados.",
     "mechanism": "VibeCoding Framework (Arquitectura de Prompting de Nivel 4)",
     "guarantee": "Garantía de Resultados de 30 Días: Si no logras publicar tu primera app, te devuelvo cada centavo y te regalo una consultoría 1 a 1.",
-    "price": "Preco a consultar",
-    "offer_name": "Metodo The Vibe Architect (El Arquitecto) - Transformacao 360",
+    "price": "67 USD",
+    "offer_name": "Metodo The Vibe Architect (El Arquitecto) - Transformación Full",
     "the_stack": [
         {
-            "item": "Metodo The Vibe Architect (El Arquitecto)",
-            "value": "R$ 497",
-            "description": "Core product."
+            "item": "Método The Vibe Architect (El Arquitecto)",
+            "value": "497 USD",
+            "description": "Producto principal."
         },
         {
-            "item": "Bônus: Mestre da Saciedade",
-            "value": "R$ 197",
-            "description": "Alimentos que zeram a fome."
+            "item": "Bono: Plantillas de 'God-Mode'",
+            "value": "197 USD",
+            "description": "Ahorra 40 horas de trabajo."
         },
         {
-            "item": "Comunidade VIP",
-            "value": "R$ 297",
-            "description": "Suporte direto."
+            "item": "Acceso al Círculo Secreto",
+            "value": "297 USD",
+            "description": "Networking exclusivo."
         }
     ],
     "upsell": {
         "expert_name": "The Vibe Architect (El Arquitecto)",
         "headline": "ESPERA! Nao feche essa pagina ainda...",
-        "subheadline": "Sem problemas comuns. Sem dietas impossíveis. Só resultados.",
+        "subheadline": "Sem Perder el 10% de las ganancias en comisiones bancarias y tipos de cambio (El dolor de la moneda local).. Sem dietas impossíveis. Só resultados.",
         "mechanism": "VibeCoding Framework (Arquitectura de Prompting de Nivel 4)",
         "guarantee": "Garantía de Resultados de 30 Días: Si no logras publicar tu primera app, te devuelvo cada centavo y te regalo una consultoría 1 a 1.",
         "price": "R$ 197",
-        "offer_name": "Metodo The Vibe Architect (El Arquitecto) - Transformacao 360",
+        "offer_name": "Metodo The Vibe Architect (El Arquitecto) - Transformación Full",
         "the_stack": [
             {
-                "item": "Metodo The Vibe Architect (El Arquitecto)",
-                "value": "R$ 497",
-                "description": "Core product."
+                "item": "Método The Vibe Architect (El Arquitecto)",
+                "value": "497 USD",
+                "description": "Producto principal."
             },
             {
-                "item": "Bônus: Mestre da Saciedade",
-                "value": "R$ 197",
-                "description": "Alimentos que zeram a fome."
+                "item": "Bono: Plantillas de 'God-Mode'",
+                "value": "197 USD",
+                "description": "Ahorra 40 horas de trabajo."
             },
             {
-                "item": "Comunidade VIP",
-                "value": "R$ 297",
-                "description": "Suporte direto."
+                "item": "Acceso al Círculo Secreto",
+                "value": "297 USD",
+                "description": "Networking exclusivo."
             }
         ],
         "upsell": {},
