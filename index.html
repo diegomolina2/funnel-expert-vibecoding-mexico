@@ -1,298 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cómo el VibeCoding Framework (Arquitectura de Prompting de Nivel 4) resuelve el miedo a Make Money Online / SaaS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Descubra o VibeCoding Framework</title>
     <style>
-        :root {
-            --primary: #f59e0b;
-            --primary-hover: #d97706;
-            --bg: #0b0f1a;
-            --card-bg: #161e2d;
-            --text: #f8fafc;
-            --text-muted: #94a3b8;
-            --success: #10b981;
-        }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* 1. ANÚNCIO / BARRA DE TOPO */
-        .announcement {
-            background: var(--primary);
-            color: #000;
-            text-align: center;
-            padding: 8px;
-            font-weight: 800;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* 2. HEADLINE & SUBHEADLINE */
-        header {
-            padding: 60px 0 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: clamp(1.8rem, 5vw, 2.8rem);
-            line-height: 1.1;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-
-        .highlight { color: var(--primary); }
-
-        .subheadline {
-            font-size: clamp(1rem, 3vw, 1.25rem);
-            color: var(--text-muted);
-            margin-bottom: 40px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* 3. VSL / VÍDEO */
-        .vsl-container {
-            background: #000;
-            aspect-ratio: 16/9;
-            width: 100%;
-            border-radius: 12px;
-            border: 2px solid #334155;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        }
-
-        .play-button {
-            width: 70px;
-            height: 70px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #000;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(245, 158, 11, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
-        }
-
-        /* 4. CTA GLOBAL */
-        .cta-container {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .btn {
-            display: block;
-            width: 100%;
-            max-width: 450px;
-            margin: 0 auto;
-            background: var(--primary);
-            color: #000;
-            padding: 22px 30px;
-            border-radius: 12px;
-            font-weight: 900;
-            font-size: 1.3rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
-            text-transform: uppercase;
-        }
-
-        .btn:hover {
-            transform: scale(1.03);
-            background: var(--primary-hover);
-        }
-
-        /* SECTIONS */
-        section { padding: 60px 0; border-bottom: 1px solid #1e293b; }
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 40px;
-            color: var(--primary);
-        }
-
-        /* 5. AMEAÇA / INIMIGO */
-        .problem-box {
-            background: rgba(239, 68, 68, 0.1);
-            border-left: 4px solid #ef4444;
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-
-        /* 6. SOLUÇÃO / MECANISMO */
-        .mechanism-box {
-            background: rgba(16, 185, 129, 0.1);
-            border-left: 4px solid var(--success);
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        /* 7. THE STACK / O QUE VAI LEVAR */
-        .feature-card {
-            background: var(--card-bg);
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #334155;
-            margin-bottom: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .feature-card h3 { font-size: 1.1rem; color: #fff; }
-        .feature-card .val { color: var(--success); font-weight: 900; }
-
-        /* 8. ORDER BUMP */
-        .order-bump {
-            background: #fff;
-            color: #000;
-            border: 2px dashed #f59e0b;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 30px 0;
-            display: flex;
-            gap: 15px;
-            align-items: flex-start;
-        }
-
-        .bump-checkbox { width: 25px; height: 25px; accent-color: var(--primary); }
-
-        /* 9. GARANTIA */
-        .guarantee-box {
-            text-align: center;
-            padding: 40px;
-            background: #161e2d;
-            border-radius: 20px;
-        }
-        .guarantee-badge { width: 120px; margin-bottom: 20px; }
-
-        /* FAQ */
-        .faq-item { margin-bottom: 25px; text-align: left; }
-        .faq-question { font-weight: 900; color: var(--primary); margin-bottom: 8px; }
-
-        footer { padding: 40px 0; text-align: center; font-size: 0.75rem; color: var(--text-muted); }
-
+        :root { --primary: #f59e0b; --bg: #030712; --text: #f9fafb; --card: #111827; }
+        body { font-family: sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; margin: 0; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { padding: 60px 0; text-align: center; }
+        h1 { font-size: 2.5rem; }
+        .btn { display: block; padding: 20px; background: var(--primary); color: #000; text-decoration: none; font-weight: bold; text-align: center; border-radius: 8px; }
+        section { padding: 40px 0; border-bottom: 1px solid #1f2937; }
+        .box { background: var(--card); padding: 20px; border-radius: 12px; }
     </style>
 </head>
 <body>
-    <div class="announcement">
-        Desbloqueado: The Vibe Architect (El Arquitecto) liberou o acesso ao VibeCoding Framework (Arquitectura de Prompting de Nivel 4)
-    </div>
-
     <header class="container">
-        <h1>Cómo el VibeCoding Framework (Arquitectura de Prompting de Nivel 4) resuelve el miedo a Make Money Online / SaaS</h1>
-        <p class="subheadline">Sin Perder el 10% de las ganancias en comisiones bancarias y tipos de cambio (El dolor de la moneda local).. Sin dietas imposibles. Solo resultados.</p>
-        
-        <div class="vsl-container">
-            <div class="play-button">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8 5v14l11-7z"/>
-                </svg>
-            </div>
-        </div>
-
-        <a href="#pricing" class="btn">Sim! Quero Garantir Minha Vaga</a>
+        <h1>Descubra o VibeCoding Framework</h1>
+        <p>Resultados rapidos.</p>
+        <a href="#pricing" class="btn">Si! Quiero Garantizar Mi Lugar</a>
     </header>
-
     <section class="container">
-        <h2 class="section-title">Por que você ainda falha?</h2>
-        <div class="problem-box">
-            <p>A maioria das pessoas no mercado de Make Money Online / SaaS falha porque foca no <strong>Inimigo Comum: La 'Economía Local' estancada y la educación tradicional de 5 años que no enseña a monetizar.</strong>.</p>
-        </div>
-        <p>Isso cria uma barreira invisível que impede seu progresso, não importa o quanto você se esforce.</p>
-    </section>
-
-    <section class="container">
-        <h2 class="section-title">O Novo Caminho: VibeCoding Framework (Arquitectura de Prompting de Nivel 4)</h2>
-        <div class="mechanism-box">
-            <p>Diferente de tudo o que você já viu, o VibeCoding Framework (Arquitectura de Prompting de Nivel 4) foca na causa raiz do problema, permitindo que você atinja Recibir notificaciones de Stripe/PayPal en USD/EUR mientras duermes. sem Perder el 10% de las ganancias en comisiones bancarias y tipos de cambio (El dolor de la moneda local)..</p>
+        <h2>Por que sigues fallando?</h2>
+        <div class="box">
+            <p>Te enfocas en el error comun: <strong>La 'Economía Local' estancada y la educación tradicional de 5 años que no enseña a monetizar.</strong></p>
         </div>
     </section>
-
+    <section class="container">
+        <h2>El Nuevo Camino: VibeCoding Framework</h2>
+        <div class="box">
+            <p>VibeCoding Framework se enfoca en la causa raiz, permitiendote lograr <strong>Recibir notificaciones de Stripe/PayPal en USD/EUR mientras duermes.</strong></p>
+        </div>
+    </section>
     <section id="pricing" class="container">
-        <h2 class="section-title">Tudo o que você vai receber hoje:</h2>
-        <div class="stack-container">
-            <div class='feature-card'><div><h3>Método The Vibe Architect (El Arquitecto)</h3><p>Producto principal.</p></div><div class='val'>497 USD</div></div><div class='feature-card'><div><h3>Bono: Plantillas de 'God-Mode'</h3><p>Ahorra 40 horas de trabajo.</p></div><div class='val'>197 USD</div></div><div class='feature-card'><div><h3>Acceso al Círculo Secreto</h3><p>Networking exclusivo.</p></div><div class='val'>297 USD</div></div>
-        </div>
-
-        
-            <div class="order-bump">
-                <input type="checkbox" class="bump-checkbox">
-                <div>
-                    <strong style="color:#d97706">OFERTA ESPECIAL: None</strong>
-                    <p style="font-size:0.9rem; margin-top:5px">None</p>
-                    <p style="font-size:0.8rem; margin-top:5px; font-weight:bold">+ APENAS R$ 27,00</p>
-                </div>
-            </div>
-            
-
-        <div style="text-align: center; margin-top: 40px;">
-            <p style="margin-bottom: 15px; font-size: 0.9rem; color: var(--text-muted); text-decoration: line-through;">De R$ 1.997 por apenas:</p>
-            <h2 style="font-size: 3rem; font-weight: 900; color: var(--success);">67 USD</h2>
-            <a href="#" class="btn" style="margin-top: 20px;">Quero o Acesso Imediato</a>
-            <p style="margin-top: 15px; font-size: 0.8rem; color: var(--text-muted);">💳 Parcelamento em até 12x no cartão</p>
+        <h2>Todo lo que recibiras hoy:</h2>
+        <div class="box">
+            <p>De USD 1.997 por solo:</p>
+            <h1 style="color:#10b981">67 USD</h1>
+            <a href="#" class="btn">Quiero el Acceso Inmediato</a>
         </div>
     </section>
-
     <section class="container">
-        <div class="guarantee-box">
-            <img src="https://media.istockphoto.com/id/1155166070/vector/7-days-money-back-guarantee-icon-seven-days-seal-label-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=L_qSFr1OqYm67J9-MvHw6uC4x7-_W_V3PzR_p-V_E5c=" alt="Garantia" class="guarantee-badge">
-            <h2 class="section-title" style="margin-bottom: 10px;">Garantia Incondicional</h2>
+        <div class="box" style="text-align:center">
+            <h2>Garantia Incondicional</h2>
             <p>Garantía de Resultados de 30 Días: Si no logras publicar tu primera app, te devuelvo cada centavo y te regalo una consultoría 1 a 1.</p>
         </div>
     </section>
-
-    <section class="container">
-        <h2 class="section-title">Perguntas Frequentes</h2>
-        <div class="faq">
-            <div class='faq-item'><div class='faq-question'>Como vou receber o acesso?</div><p>Imediatamente após a confirmação do pagamento, você receberá um e-mail com seus dados de login para nossa plataforma exclusiva.</p></div><div class='faq-item'><div class='faq-question'>Por quanto tempo tenho acesso?</div><p>O acesso é vitalício. Você pode ver e rever as aulas quantas vezes quiser, no seu ritmo.</p></div><div class='faq-item'><div class='faq-question'>E se eu não gostar?</div><p>Você tem 7 dias de garantia incondicional. Se não ficar satisfeito, devolvemos cada centavo, sem perguntas.</p></div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 The Vibe Architect (El Arquitecto). Todos os direitos reservados.</p>
-            <p style="margin-top: 20px;">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Uma vez que você sai do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
-        </div>
-    </footer>
-
-    <script src="tracking.js"></script>
-    <script>
-        window.EXPERT_SLUG = "vibecoding_mexico";
-        window.SUPABASE_URL = "https://cplujphzqhmewokglmmp.supabase.co";
-        window.SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNwbHVqcGh6cWhtZXdva2dsbW1wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwNDQ5MDYsImV4cCI6MjA4NzYyMDkwNn0.P2mRnRAYrzFtpwk7-gdT4bE1U-Cr_uvKYjebzRqMw_o";
-    </script>
+    <footer><div class="container" style="text-align:center; padding: 40px 0;">&copy; 2026 The Vibe Architect</div></footer>
 </body>
 </html>
